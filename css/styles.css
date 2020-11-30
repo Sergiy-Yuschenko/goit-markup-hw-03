@@ -1,0 +1,251 @@
+:root {
+    --accent-color: #2196F3; /*( частина логотипу,hover по посиланнях тобто акцент)*/
+    --logo-color: #000000; /*частина логотипу (світлий фон)*/
+    --heading-color: #212121; /*(h2, h3, посилання, текст на кнопках портфоліо) */
+    --main-color: #757575; /*(посилання на e-mail, абзаци)*/
+    --main-color-dark-backgr: #ffffff; /*(h1, кнопка "заказать услугу", рядок адреси, частина логотипу на темному фоні)*/
+    --backgr-color-first: #2F303A; /*(footer, hero)*/
+    --backgr-color-second: #F5F4FA; /*(section "Our command",  кнопки портфоліо)*/
+    --addres-second-color: rgba(255, 255, 255, 0.6); /*(емейл і телефон футера)*/
+    --main-font: 'Roboto', Roboto, sans-serif; /*головний шрифт для всього тексту*/
+    --secondary-font: 'Raleway', Raleway, sans-serif; /*вторинний шрифт для логотипу*/
+}
+
+body {
+         color: var(--main-color);
+        font-family: var(--main-font);
+}
+
+ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+}
+
+a {
+        text-decoration: none;
+        color: var(--main-color);
+}
+
+button {
+        font-family: var(--main-font);
+        border: 0;
+}
+
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+      }
+
+/* ============== HEADER ============== */
+
+.address {
+        font-style: normal;
+}
+.logo {
+        color: var(--logo-color);
+        font-family: var(--secondary-font);
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 1.192;
+        letter-spacing: 0.03em;
+}
+
+.logo-first {
+        color: var(--accent-color);
+}
+
+.navigation-list-link,
+.address-list-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.02em;      
+ }
+
+.navigation-list-link{
+        color: var(--heading-color);
+}
+
+.address-list-link {
+        color: var(--main-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.address-list-link:hover,
+.address-list-link:focus {
+         color: var(--accent-color);
+}
+
+.navigation-list-link.active {
+        color: var(--accent-color);
+}
+
+
+/* ============== END HEADER ============== */
+
+/* ============== HERO SECTION ============== */
+
+.hero-section {
+                /*!!!! в майюутньому background-color!*/
+                background-color: var(--backgr-color-first);
+}
+
+.hero-title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.364;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--main-color-dark-backgr);
+
+}
+
+.hero-button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-color-dark-backgr);
+        background-color: var(--accent-color);
+}
+
+/* ============== HERO SECTION END ============== */
+
+/* ============== ADVANTAGES SECTION ============== */
+
+.advantages-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.174;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--heading-color);
+}
+
+.advantages-description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+}
+
+/* ============== ADVANTAGES SECTION END ============== */
+
+/* ============== SPECIALIZATION SECTION ============== */
+
+.specialization-title,
+.our-command-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.167;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--heading-color);
+}
+ 
+/* ============== SPECIALIZATION SECTION END ============== */
+
+/* ============== OUR COMAND ============== */
+
+.our-command-section {
+        background-color: var(--backgr-color-second);
+}
+
+.our-specialist-name {
+        font-weight: 500;
+        color: var(--heading-color);
+}
+
+.our-specialist-specialization {
+        font-weight: 400;
+}
+
+.our-specialist-name,
+.our-specialist-specialization {
+        font-size: 16px;
+        line-height: 1.188;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+
+/* ============== OUR COMAND END ============== */
+
+/* ============== FOOTER ============== */
+.footer {
+        background-color: var(--backgr-color-first);
+}
+
+.logo-second-dark {
+        color: var(--main-color-dark-backgr);
+}
+
+.address-footer-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: var(--addres-second-color);
+}
+
+.location {
+        color: var(--main-color-dark-backgr);
+}
+/* ============== FOOTER END ============== */
+
+/* ============== PORTFOLIO.HTML ============== */
+
+.portfolio-button {
+        color: var(--heading-color);
+        background-color: var(--backgr-color-second);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+        background-color: var(--accent-color);
+        color: var(--main-color-dark-backgr);
+}
+
+/*.portfolio-description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.556;
+        letter-spacing: 0.03em;
+        color: var(--main-color-dark-backgr);
+        background-color: var(--accent-color);
+} */
+
+.portfolio-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--heading-color);
+}
+
+.portfolio-type {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.03em;
+
+}
+
+/* ============== PORTFOLIO.HTML END ============== */
