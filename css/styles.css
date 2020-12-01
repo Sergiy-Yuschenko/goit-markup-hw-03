@@ -68,11 +68,59 @@ img {
         display: block;
 }
 
+.container {
+        width: 1630px;
+        margin: 0 auto;
+        display: flex;
+        padding: 0 15px;
+;
+}
+
 /* ============== HEADER ============== */
+
+.header .container {
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 25px;
+}
+
+.site-nav {
+        display: flex;
+        align-items: center;
+        margin-left: 215px;
+}
+
+.navigation-list {
+        display: flex;
+}
+
+.address-list-header {
+        display: flex;
+        align-items: center;
+}
+
+.header .logo {
+        margin-right: 93px;
+}
 
 .address {
         font-style: normal;
+        /*display: flex;*/
 }
+
+.navigation-list-item:not(:last-child) {
+        margin-right: 50px;
+}
+.address-list-item:not(:last-child) {
+        margin-right: 50px;
+}
+
+.header .address {
+        margin-left: auto;
+        margin-right: 215px;
+}
+
 .logo {
         color: var(--logo-color);
         font-family: var(--secondary-font);
