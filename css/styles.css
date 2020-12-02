@@ -166,9 +166,11 @@ img {
 
 /* ============== HERO SECTION ============== */
 
-.hero-section {
+.hero-section .container {
                 /*!!!! в майюутньому background-color!*/
                 background-color: var(--backgr-color-first);
+                flex-direction: column;
+                align-items: center;
 }
 
 .hero-title {
@@ -179,6 +181,8 @@ img {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--main-color-dark-backgr);
+        margin-top: 200px;
+        margin-bottom: 30px;
 
 }
 
@@ -188,8 +192,15 @@ img {
         line-height: 1.625;
         text-align: center;
         letter-spacing: 0.03em;
+        min-width: 200px;
+        height: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 10px 32px;
         color: var(--main-color-dark-backgr);
         background-color: var(--accent-color);
+        margin-bottom: 200px;
 }
 
 /* ============== HERO SECTION END ============== */
