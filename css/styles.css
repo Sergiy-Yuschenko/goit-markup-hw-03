@@ -14,6 +14,10 @@
     --card-set-portfolio: 30px; /*Відстань між карточками блоку */
 }
 
+* {
+        outline: 1px solid tomato;
+}
+
 body {
          color: var(--main-color);
         font-family: var(--main-font);
@@ -76,13 +80,13 @@ img {
 }
 
 .container {
-        width: 1600px;
+        width: 1200px;
         margin: 0 auto;
-        padding: 0 215px;
+        padding: 0 15px;
         display: flex;
         /*justify-content: center;*/
         align-items: center;
-        background: #ffffff ;
+        background: #ffffff;
 }
 
 /* ============== HEADER ============== */
@@ -172,8 +176,12 @@ img {
 
 /* ============== HERO SECTION ============== */
 
+.hero-section {
+        background-color: var(--backgr-color-first);
+        width: 100%;
+}
+
 .hero-section > .container {
-                background-color: var(--backgr-color-first);
                 flex-direction: column;
 }
 
