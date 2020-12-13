@@ -257,18 +257,20 @@ img {
 }
 .specialization-list {
         display: flex;
-        /*width:75%;*/
-        /*margin-top: 50px; */
         justify-content: center;
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;
         margin-left: calc(-1*var(--card-set-specialization));
-        margin-top: calc(-1*var(--card-set-specialization));    
+        margin-top: calc(-1*var(--card-set-specialization));   */ /*Зроблено для сітки елементів*/ 
 }
 
-.specialization-list-item {
+/*.specialization-list-item {
         flex-basis: calc(100%/3 - var(--card-set-specialization));
         margin-left: var(--card-set-specialization);
         margin-top: var(--card-set-specialization);
+}*/  /*Зроблено для сітки елементів*/
+
+.specialization-list-item:not(:last-child) {
+        margin-right: var(--card-set-specialization);
 }
 
 .specialization-title,
@@ -302,19 +304,24 @@ img {
 .our-command-list {
           display: flex;
           justify-content: center;
-          flex-wrap: wrap;
+        /*  flex-wrap: wrap;
           margin-left: calc(-1*var(--card-set-our-command));
           margin-top: calc(-1*var(--card-set-our-command));
+          */  /*Зроблено для сітки елементів*/
 }
 
 .our-command-list-item {
         background-color: var(--main-color-dark-backgr);
-        flex-basis: calc(100%/4 - var(--card-set-our-command));
+   /*        flex-basis: calc(100%/4 - var(--card-set-our-command));
         margin-left: var(--card-set-our-command);
-        margin-top: var(--card-set-our-command);
+        margin-top: var(--card-set-our-command); */  /*Зроблено для сітки елементів*/
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 
+}
+
+.our-command-list-item:not(:last-child) {
+        margin-right: var(--card-set-our-command);
 }
 
 .our-command-card-content {
