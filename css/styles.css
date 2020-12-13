@@ -181,6 +181,8 @@ img {
 
 .hero-section > .container {
                 flex-direction: column;
+                padding-top: 200px;
+                padding-bottom: 200px;
 }
 
 .hero-title {
@@ -191,7 +193,6 @@ img {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: var(--main-color-dark-backgr);
-        margin-top: 200px;
         margin-bottom: 30px;
 
 }
@@ -209,7 +210,6 @@ img {
         padding: 10px 32px;
         color: var(--main-color-dark-backgr);
         background-color: var(--accent-color);
-        margin-bottom: 200px;
 }
 
 /* ============== HERO SECTION END ============== */
