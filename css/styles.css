@@ -14,9 +14,9 @@
     --card-set-portfolio: 30px; /*Відстань між карточками блоку */
 }
 
-* {
+/* * {
         outline: 1px solid tomato;
-}
+}*/
 
 body {
          color: var(--main-color);
