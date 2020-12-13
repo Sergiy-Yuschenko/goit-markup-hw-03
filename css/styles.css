@@ -215,10 +215,13 @@ img {
 /* ============== HERO SECTION END ============== */
 
 /* ============== ADVANTAGES SECTION ============== */
-.advantages-list {
-        display: flex;
+.advantages > .container {
         padding-top: 94px;
         padding-bottom: 94px;
+}
+
+.advantages-list {
+        display: flex;
 }
 
 .advantages-list-item {
